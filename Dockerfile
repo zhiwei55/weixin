@@ -1,11 +1,7 @@
-FROM index.tenxcloud.com/tenxcloud/nginx-php5
+FROM index.tenxcloud.com/tutum/apache-php
 #MAINTAINER zhiwe "zhiwei@ecquaria.com"
 
 # Enable php by default
-ADD . /usr/share/nginx/html/
+ADD . /app/
 
-# Expose the container port
-EXPOSE 3000
-
-CMD service php5-fpm start && nginx -g "daemon off;"
 
