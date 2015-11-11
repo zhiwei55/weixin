@@ -2,7 +2,7 @@ FROM index.tenxcloud.com/tenxcloud/nginx-php5
 #MAINTAINER zhiwe "zhiwei@ecquaria.com"
 
 # Enable php by default
-ADD index.php /usr/share/nginx/html/
+ADD . /usr/share/nginx/html/
 
 # Expose the container port
 EXPOSE 3000
